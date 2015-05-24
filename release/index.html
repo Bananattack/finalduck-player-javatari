@@ -3,18 +3,126 @@
 
     <head lang="en">
         <meta charset="UTF-8">
-        <title>Javatari.js</title>
+        <title>FINAL DUCK</title>
+        <link href='http://fonts.googleapis.com/css?family=Roboto:900,400' rel='stylesheet' type='text/css'>
+        <style>
+        body
+        {
+            background: #FFFFFFF;
+            color: #000000;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 64px;
+        }
+
+        .web-player
+        {
+            margin: 32px auto 0;
+        }
+
+        .heading
+        {
+            margin: 16px auto 0;
+            font-size: 32px;
+            font-weight: 900;
+            font-family: 'Roboto', sans-serif;
+            max-width: 600px;
+        }
+
+        .heading2
+        {
+            margin: 8px auto 0;
+            font-size: 24px;
+            font-weight: 900;
+            max-width: 600px;            
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .text
+        {
+            margin: 16px auto 0;
+            font-size: 18px;
+            max-width: 600px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .note
+        {
+            font-size: 16px;
+            display: block;
+            padding-top: 4px;
+            padding-bottom: 16px;
+        }
+
+        a
+        {
+            color: #6699FF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover
+        {
+            color: #99CCFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        </style>
+
     </head>
 
-    <body style="background: #e0e0d0">
+    <body>
 
-        <div style="margin: 30px auto 0; min-height: 594px;">
-            <div id="javatari-screen" style="margin: 0 auto; box-shadow: 2px 2px 10px rgb(60, 60, 60);"></div>
-            <div id="javatari-console-panel" style="margin: 0 auto; box-shadow: 2px 2px 10px rgb(60, 60, 60);"></div>
+        <div class="web-player">
+            <div id="javatari-screen" style="margin: 0 auto;"></div>
         </div>
 
         <script src="javatari/javatari.js"></script>
+        <script>
+            Javatari.ROM_AUTO_LOAD_URL = "http://make.vg/get/homebrew/finalduck.a26";
+            Javatari.CARTRIDGE_CHANGE_DISABLED = true;
+            Javatari.CONSOLE_PANEL_ELEMENT_ID = '';
 
+            jt.Monitor.Controls.LOAD_CARTRIDGE_FILE = -1;
+            jt.Monitor.Controls.LOAD_CARTRIDGE_FILE_NO_AUTO_POWER = -1;
+            jt.Monitor.Controls.LOAD_CARTRIDGE_URL = -1;
+            jt.Monitor.Controls.LOAD_CARTRIDGE_URL_NO_AUTO_POWER = -1;
+            jt.Monitor.Controls.LOAD_CARTRIDGE_PASTE = -1;
+        </script>
+        <div class='heading'>Final Duck</div>
+        <div class='heading2'>Controls</div>
+        <div class='text'>
+            <b>Player 1:</b><br/>
+            Move: Arrow Keys<br/>
+            Shoot / Eat: Space<br/>
+            <br/>
+            <b>Player 2:</b>
+            Move: WASD<br/>
+            Shoot / Eat: Q<br/>
+        </div>
+        <div class='heading2'>Objective</div>
+        <div class='text'>
+            Eat the bread!<br/>
+            Two ducks face against each other.<br/>
+            First player to 10 points wins.<br/>
+            If you shoot the other player, they will be knocked back, and sometimes lose a point.
+        </div>
+        <div class='heading2'>Download</div>
+        <div class="text">
+            <a href="http://make.vg/get/hombrew/finalduck.zip">Final Duck (.zip)</a><br/>
+            <span class='note'>This zip includes Atari 2600 .a26 ROM file and .wiz source code.</span>
+        </div>
+        <div class="text">
+            The ROM is for an Atari 2600. For the best experience, download the ROM onto a flash cartridge such as the <a href="http://harmony.atariage.com/">Harmony Cartridge</a>, and play on your Atari 2600 VCS console. Altenatively, use the <a href='http://stella.sourceforge.net/'>Stella emulator</a>.
+        </div>
+        <div class='heading2'>About Web Player</div>
+        <div class="text">
+            This web player uses a modified version of the <a href="http://www.javatari.com">Javatari.js</a> source code for 2600 emulation.
+            Modified source code can be <a href="https://github.com/Bananattack/finalduck-player-javatari">found here</a>.
+        </div>
+        <!-- zzz this web page is pretty bad and probably won't work on a mobile device at all. It was just so I could host my homebrew somewhere with a playable version. -->
     </body>
 
 </html>

@@ -116,18 +116,18 @@ jt.DOMMonitorControls = function(monitor) {
     var KEY_RIGHT          = jt.Keys.VK_RIGHT.c;
     var KEY_DOWN           = jt.Keys.VK_DOWN.c;
 
-    var KEY_SIZE_DEFAULT   = jt.Keys.VK_BACK_SPACE.c;
+    var KEY_SIZE_DEFAULT   = -1;//jt.Keys.VK_BACK_SPACE.c;
 
-    var KEY_CART_FILE      = jt.Keys.VK_F5.c;
-    var KEY_CART_URL       = jt.Keys.VK_F6.c;
-    var KEY_CART_PASTE_V   = jt.Keys.VK_V.c;
-    var KEY_CART_PASTE_INS = jt.Keys.VK_INSERT.c;
+    var KEY_CART_FILE      = -1;//jt.Keys.VK_F5.c;
+    var KEY_CART_URL       = -1;//jt.Keys.VK_F6.c;
+    var KEY_CART_PASTE_V   = -1;//jt.Keys.VK_V.c;
+    var KEY_CART_PASTE_INS = -1;//jt.Keys.VK_INSERT.c;
 
-    var KEY_CRT_FILTER     = jt.Keys.VK_T.c;
-    var KEY_CRT_MODES      = jt.Keys.VK_R.c;
+    var KEY_CRT_FILTER     = -1;//jt.Keys.VK_T.c;
+    var KEY_CRT_MODES      = -1;//jt.Keys.VK_R.c;
 
-    var KEY_DEBUG          = jt.Keys.VK_D.c;
-    var KEY_STATS          = jt.Keys.VK_G.c;
+    var KEY_DEBUG          = -1;//jt.Keys.VK_D.c;
+    var KEY_STATS          = -1;//jt.Keys.VK_G.c;
 
     var KEY_FULLSCREEN     = jt.Keys.VK_ENTER.c;
 

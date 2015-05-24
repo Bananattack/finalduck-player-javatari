@@ -400,49 +400,49 @@ jt.DOMConsoleControls = function() {
 
     // Default Key Values
 
-    var KEY_TOGGLE_JOYSTICK  = jt.DOMConsoleControls.KEY_TOGGLE_JOYSTICK;
-    var KEY_TOGGLE_P1_MODE   = jt.DOMConsoleControls.KEY_TOGGLE_P1_MODE;
-    var KEY_TOGGLE_PADDLE    = jt.DOMConsoleControls.KEY_TOGGLE_PADDLE;
-    var KEY_CARTRIDGE_FORMAT = jt.DOMConsoleControls.KEY_CARTRIDGE_FORMAT;
-    var KEY_SELECT           = jt.DOMConsoleControls.KEY_SELECT;
-    var KEY_SELECT2          = jt.DOMConsoleControls.KEY_SELECT2;
-    var KEY_RESET            = jt.DOMConsoleControls.KEY_RESET;
-    var KEY_FAST_SPEED       = jt.DOMConsoleControls.KEY_FAST_SPEED;
-    var KEY_PAUSE            = jt.DOMConsoleControls.KEY_PAUSE;
+    var KEY_TOGGLE_JOYSTICK  = -1;//jt.DOMConsoleControls.KEY_TOGGLE_JOYSTICK;
+    var KEY_TOGGLE_P1_MODE   = -1;//jt.DOMConsoleControls.KEY_TOGGLE_P1_MODE;
+    var KEY_TOGGLE_PADDLE    = -1;//jt.DOMConsoleControls.KEY_TOGGLE_PADDLE;
+    var KEY_CARTRIDGE_FORMAT = -1;//jt.DOMConsoleControls.KEY_CARTRIDGE_FORMAT;
+    var KEY_SELECT           = -1;//jt.DOMConsoleControls.KEY_SELECT;
+    var KEY_SELECT2          = -1;//jt.DOMConsoleControls.KEY_SELECT2;
+    var KEY_RESET            = -1;//jt.DOMConsoleControls.KEY_RESET;
+    var KEY_FAST_SPEED       = -1;//jt.DOMConsoleControls.KEY_FAST_SPEED;
+    var KEY_PAUSE            = -1;//jt.DOMConsoleControls.KEY_PAUSE;
 
-    var KEY_POWER            = jt.Keys.VK_F1.c;
-    var KEY_BLACK_WHITE      = jt.Keys.VK_F2.c;
-    var KEY_DIFFICULTY0      = jt.Keys.VK_F4.c;
-    var KEY_DIFFICULTY1      = jt.Keys.VK_F9.c;
+    var KEY_POWER            = -1;//jt.Keys.VK_F1.c;
+    var KEY_BLACK_WHITE      = -1;//jt.Keys.VK_F2.c;
+    var KEY_DIFFICULTY0      = -1;//jt.Keys.VK_F4.c;
+    var KEY_DIFFICULTY1      = -1;//jt.Keys.VK_F9.c;
 
-    var KEY_FRAME            = jt.Keys.VK_F.c;
-    var KEY_TRACE            = jt.Keys.VK_Q.c;
-    var KEY_DEBUG            = jt.Keys.VK_D.c;
-    var KEY_NO_COLLISIONS    = jt.Keys.VK_C.c;
-    var KEY_VIDEO_STANDARD   = jt.Keys.VK_V.c;
+    var KEY_FRAME            = -1;//jt.Keys.VK_F.c;
+    var KEY_TRACE            = -1;//jt.Keys.VK_Q.c;
+    var KEY_DEBUG            = -1;//jt.Keys.VK_D.c;
+    var KEY_NO_COLLISIONS    = -1;//jt.Keys.VK_C.c;
+    var KEY_VIDEO_STANDARD   = -1;//jt.Keys.VK_V.c;
 
-    var KEY_STATE_0          = jt.Keys.VK_QUOTE.c;
-    var KEY_STATE_0a         = jt.Keys.VK_TILDE.c;
-    var KEY_STATE_1          = jt.Keys.VK_1.c;
-    var KEY_STATE_2          = jt.Keys.VK_2.c;
-    var KEY_STATE_3          = jt.Keys.VK_3.c;
-    var KEY_STATE_4          = jt.Keys.VK_4.c;
-    var KEY_STATE_5          = jt.Keys.VK_5.c;
-    var KEY_STATE_6          = jt.Keys.VK_6.c;
-    var KEY_STATE_7          = jt.Keys.VK_7.c;
-    var KEY_STATE_8          = jt.Keys.VK_8.c;
-    var KEY_STATE_9          = jt.Keys.VK_9.c;
-    var KEY_STATE_10         = jt.Keys.VK_0.c;
-    var KEY_STATE_11         = jt.Keys.VK_MINUS.c;
-    var KEY_STATE_11a        = jt.Keys.VK_MINUS2.c;
-    var KEY_STATE_12         = jt.Keys.VK_EQUALS.c;
-    var KEY_STATE_12a        = jt.Keys.VK_EQUALS2.c;
+    var KEY_STATE_0          = -1;//jt.Keys.VK_QUOTE.c;
+    var KEY_STATE_0a         = -1;//jt.Keys.VK_TILDE.c;
+    var KEY_STATE_1          = -1;//jt.Keys.VK_1.c;
+    var KEY_STATE_2          = -1;//jt.Keys.VK_2.c;
+    var KEY_STATE_3          = -1;//jt.Keys.VK_3.c;
+    var KEY_STATE_4          = -1;//jt.Keys.VK_4.c;
+    var KEY_STATE_5          = -1;//jt.Keys.VK_5.c;
+    var KEY_STATE_6          = -1;//jt.Keys.VK_6.c;
+    var KEY_STATE_7          = -1;//jt.Keys.VK_7.c;
+    var KEY_STATE_8          = -1;//jt.Keys.VK_8.c;
+    var KEY_STATE_9          = -1;//jt.Keys.VK_9.c;
+    var KEY_STATE_10         = -1;//jt.Keys.VK_0.c;
+    var KEY_STATE_11         = -1;//jt.Keys.VK_MINUS.c;
+    var KEY_STATE_11a        = -1;//jt.Keys.VK_MINUS2.c;
+    var KEY_STATE_12         = -1;//jt.Keys.VK_EQUALS.c;
+    var KEY_STATE_12a        = -1;//jt.Keys.VK_EQUALS2.c;
 
-    var KEY_SAVE_STATE_FILE  = jt.Keys.VK_F8.c;
+    var KEY_SAVE_STATE_FILE  = -1;//jt.Keys.VK_F8.c;
 
-    var KEY_CARTRIDGE_CLOCK_DEC = jt.Keys.VK_END.c;
-    var KEY_CARTRIDGE_CLOCK_INC = jt.Keys.VK_HOME.c;
-    var KEY_CARTRIDGE_REMOVE    = jt.Keys.VK_F7.c;
+    var KEY_CARTRIDGE_CLOCK_DEC = -1;//jt.Keys.VK_END.c;
+    var KEY_CARTRIDGE_CLOCK_INC = -1;//jt.Keys.VK_HOME.c;
+    var KEY_CARTRIDGE_REMOVE    = -1;//jt.Keys.VK_F7.c;
 
     var KEY_CTRL_MASK  = 1;
     var KEY_ALT_MASK   = jt.DOMConsoleControls.KEY_ALT_MASK;
@@ -453,15 +453,15 @@ jt.DOMConsoleControls = function() {
 
 };
 
-jt.DOMConsoleControls.KEY_SELECT     = jt.Keys.VK_F11.c;
-jt.DOMConsoleControls.KEY_SELECT2    = jt.Keys.VK_F10.c;
-jt.DOMConsoleControls.KEY_RESET      = jt.Keys.VK_F12.c;
-jt.DOMConsoleControls.KEY_FAST_SPEED = jt.Keys.VK_TAB.c;
-jt.DOMConsoleControls.KEY_PAUSE      = jt.Keys.VK_P.c;
+jt.DOMConsoleControls.KEY_SELECT     = -1;//jt.Keys.VK_F11.c;
+jt.DOMConsoleControls.KEY_SELECT2    = -1;//jt.Keys.VK_F10.c;
+jt.DOMConsoleControls.KEY_RESET      = -1;//jt.Keys.VK_F12.c;
+jt.DOMConsoleControls.KEY_FAST_SPEED = -1;//jt.Keys.VK_TAB.c;
+jt.DOMConsoleControls.KEY_PAUSE      = -1;//jt.Keys.VK_P.c;
 
-jt.DOMConsoleControls.KEY_TOGGLE_JOYSTICK  = jt.Keys.VK_J.c;
-jt.DOMConsoleControls.KEY_TOGGLE_P1_MODE   = jt.Keys.VK_K.c;
-jt.DOMConsoleControls.KEY_TOGGLE_PADDLE    = jt.Keys.VK_L.c;
-jt.DOMConsoleControls.KEY_CARTRIDGE_FORMAT = jt.Keys.VK_B.c;
+jt.DOMConsoleControls.KEY_TOGGLE_JOYSTICK  = -1;//jt.Keys.VK_J.c;
+jt.DOMConsoleControls.KEY_TOGGLE_P1_MODE   = -1;//jt.Keys.VK_K.c;
+jt.DOMConsoleControls.KEY_TOGGLE_PADDLE    = -1;//jt.Keys.VK_L.c;
+jt.DOMConsoleControls.KEY_CARTRIDGE_FORMAT = -1;//jt.Keys.VK_B.c;
 
 jt.DOMConsoleControls.KEY_ALT_MASK   = 2;

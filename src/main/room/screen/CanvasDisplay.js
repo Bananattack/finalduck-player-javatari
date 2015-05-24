@@ -87,6 +87,8 @@ jt.CanvasDisplay = function(mainElement) {
     };
 
     this.showOSD = function(message, overlap) {
+        return;
+        
         //Util.log(message);
         if (osdTimeout) clearTimeout(osdTimeout);
         if (!message) {
@@ -284,22 +286,22 @@ jt.CanvasDisplay = function(mainElement) {
             buttonsBar.style.border = "1px solid black";
         }
 
-        powerButton  = addBarButton(6, -26, 24, 23, -436, -208);
-        consoleControlButton(powerButton, jt.ConsoleControls.POWER);
+        /*powerButton  = addBarButton(6, -26, 24, 23, -436, -208);
+        consoleControlButton(powerButton, jt.ConsoleControls.POWER);*/
         var fsGap = 23;
         if (!Javatari.SCREEN_FULLSCREEN_DISABLED) {
-            fullscreenButton = addBarButton(-53, -26, 24, 22, -387, -209);
+            fullscreenButton = addBarButton(-29, -26, 24, 22, -387, -209);
             screenControlButton(fullscreenButton, jt.Monitor.Controls.FULLSCREEN);
             fsGap = 0;
         }
         if (!Javatari.SCREEN_RESIZE_DISABLED) {
-            scaleDownButton = addBarButton(-92 + fsGap, -26, 18, 22, -342, -209);
+            scaleDownButton = addBarButton(-74 + fsGap, -26, 18, 22, -342, -209);
             screenControlButton(scaleDownButton, jt.Monitor.Controls.SIZE_MINUS);
-            scaleUpButton = addBarButton(-74 + fsGap, -26, 21, 22, -364, -209);
+            scaleUpButton = addBarButton(-53 + fsGap, -26, 21, 22, -364, -209);
             screenControlButton(scaleUpButton, jt.Monitor.Controls.SIZE_PLUS);
         }
 
-        settingsButton  = addBarButton(-29, -26, 24, 22, -412, -209);
+        /*settingsButton  = addBarButton(-29, -26, 24, 22, -412, -209);
         settingsButton.style.cursor = "pointer";
         settingsButton.addEventListener("mousedown", function (e) {
             if (e.preventDefault) e.preventDefault();
@@ -311,7 +313,7 @@ jt.CanvasDisplay = function(mainElement) {
         logoButton.addEventListener("mousedown", function (e) {
             if (e.preventDefault) e.preventDefault();
             openSettings("ABOUT");
-        });
+        });*/
 
         mainElement.appendChild(buttonsBar);
     };
